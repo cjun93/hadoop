@@ -35,7 +35,7 @@ sudo ln -s /opt/jdk1.8.0_191/bin/java java
 export JAVA_HOME=/opt/jdk1.8.0_191
 
 
-### Compile hadoop sources
+# Compile hadoop sources
 mv hadoop-2.9.2-src.tar.gz ~/Sources
 cd ~/Sources
 git clone -b branch-2.9.2 https://github.com/apache/hadoop.git
