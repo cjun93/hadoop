@@ -45,7 +45,7 @@ $ cd ~/Sources
 $ git clone -b branch-2.9.2 https://github.com/apache/hadoop.git
 
 
-## 3.1 Patch three files such as HadoopCommon.cmake, OpensslCipher.c and HadoopPipes.cc
+ ## 3.1 Patch three files such as HadoopCommon.cmake, OpensslCipher.c and HadoopPipes.cc
 $ cd hadoop-2.9.2-src/hadoop-common-project/hadoop-common
 
 $ mv HadoopCommon.cmake HadoopCommon.cmake.bak
@@ -68,5 +68,5 @@ $ cp ~/Sources/HadoopPipes.cc .
 
 $ cd ~/Sources/hadoop-2.9.2-src/
 
-### Final step
+ ### Final step
 $ mvn package -Pdist,native -DskipTests -Dtar -Dmaven.javadoc.skip=true
