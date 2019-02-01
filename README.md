@@ -1,18 +1,18 @@
 # hadoop-odroid
 This is for Hadoop 2.9.2 and Odroid XU4 (Ubuntu 18.04 (20180531) (MINIMAL,BARE OS)
 
-## System upgrade
+1. System upgrade
 $ sudo apt update
 $ sudo apt upgrade && sudo apt autoremove
 
-## Install the required packages
+2. Install the required packages
 $ sudo apt-get install software-properties-common maven build-essential autoconf automake libtool cmake zlib1g-dev pkg-config libssl-dev bzip2 libbz2-dev libjansson-dev fuse libfuse-dev
 
-## libprotobuf-dev installation
+2.1 libprotobuf-dev installation
 This package is for the protobuf-2.5.0
 $ sudo apt install libprotobuf-dev
 
-## protobuf 2.5.0 compiling and installation
+2.2 protobuf 2.5.0 compiling and installation
 $ wget https://github.com/protocolbuffers/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
 
 $ tar xvzf protobuf-2.5.0.tar.gz
@@ -27,7 +27,7 @@ $ make
 
 $ sudo make install
 
-## JAVA jdk 1.8 installation
+2.3 JAVA jdk 1.8 installation
 $ tar xvzf jdk-8u191-linux-arm32-vfp-hflt.tar.gz
 
 $ sudo cp -rp jdk1.8.0_191 /opt/
@@ -37,7 +37,7 @@ $ export JAVA_HOME=/opt/jdk1.8.0_191
 $ export PATH=$JAVA_HOME/bin:$PATH
 
 
-## Compile hadoop sources
+3. Compile hadoop sources
 $ mv hadoop-2.9.2-src.tar.gz ~/Sources
 
 $ cd ~/Sources
