@@ -38,8 +38,22 @@ https://github.com/01org/isa-l
 URL
 * libsnappy ->https://aur.archlinux.org/libsnappy.git
 
+
+4. protobuf 2.5.0 (Required)
+-------------------------------------------------------------------------------------------------
+$ wget https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
+$ tar xvf protobuf-2.5.0.tar.gz
+$ cd protobuf-2.5.0
+$ ./autogen.sh
+$ ./configure --prefix=/usr
+$ make
+$ sudo make install
+$ protoc --version
+------------------------------------------------------------------------------------------------
+
+
 ===============================================================
-Troubleshoot
+Troubleshooting
 ===============================================================
 1. Error rpc in hadoop-pipes modeules
 diff --git a/hadoop-tools/hadoop-pipes/src/CMakeLists.txt b/hadoop-tools/hadoop-pipes/src/CMakeLists.txt
@@ -62,17 +76,6 @@ index ff660bfafce..72f422b18bd 100644
  )
 
 
-4. protobuf 2.5.0 (Required)
---------------------------------------------
-$ wget https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
-$ tar xvf protobuf-2.5.0.tar.gz
-$ cd protobuf-2.5.0
-$ ./autogen.sh
-$ ./configure --prefix=/usr
-$ make
-$ sudo make install
-$ protoc --version
----------------------------------------------------------
 
 
 
