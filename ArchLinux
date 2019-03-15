@@ -60,7 +60,8 @@ diff --git a/hadoop-tools/hadoop-pipes/src/CMakeLists.txt b/hadoop-tools/hadoop-
 index ff660bfafce..72f422b18bd 100644
 --- a/hadoop-tools/hadoop-pipes/src/CMakeLists.txt
 +++ b/hadoop-tools/hadoop-pipes/src/CMakeLists.txt
-@@ -28,6 +28,7 @@ include_directories(
+
+include_directories(
      main/native/pipes/api
      ${CMAKE_CURRENT_SOURCE_DIR}
      ${OPENSSL_INCLUDE_DIR}
@@ -68,7 +69,7 @@ index ff660bfafce..72f422b18bd 100644
  )
  
  # Example programs
-@@ -74,4 +75,5 @@ target_link_libraries(hadooppipes
+target_link_libraries(hadooppipes
      ${OPENSSL_LIBRARIES}
      ${LIB_DL}
      ${LIB_NET}
