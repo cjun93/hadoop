@@ -38,6 +38,29 @@ https://github.com/01org/isa-l
 URL
 * libsnappy ->https://aur.archlinux.org/libsnappy.git
 
+===============================================================
+Troubleshoot
+===============================================================
+1. Error rpc in hadoop-pipes modeules
+diff --git a/hadoop-tools/hadoop-pipes/src/CMakeLists.txt b/hadoop-tools/hadoop-pipes/src/CMakeLists.txt
+index ff660bfafce..72f422b18bd 100644
+--- a/hadoop-tools/hadoop-pipes/src/CMakeLists.txt
++++ b/hadoop-tools/hadoop-pipes/src/CMakeLists.txt
+@@ -28,6 +28,7 @@ include_directories(
+     main/native/pipes/api
+     ${CMAKE_CURRENT_SOURCE_DIR}
+     ${OPENSSL_INCLUDE_DIR}
++    /usr/include/tirpc
+ )
+ 
+ # Example programs
+@@ -74,4 +75,5 @@ target_link_libraries(hadooppipes
+     ${OPENSSL_LIBRARIES}
+     ${LIB_DL}
+     ${LIB_NET}
++    tirpc
+ )
+
 
 4. protobuf 2.5.0 (Required)
 --------------------------------------------
@@ -50,3 +73,6 @@ $ make
 $ sudo make install
 $ protoc --version
 ---------------------------------------------------------
+
+
+
