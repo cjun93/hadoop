@@ -1,5 +1,6 @@
 # Hadoop installation on Arch Linux
 
+
 # Required packages
 1. oracle java (AUR)
 	URL: https://aur.archlinux.org/jdk8.git
