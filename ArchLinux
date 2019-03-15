@@ -12,9 +12,6 @@ Required
 ---------------------------------------
 maven                | maven
 	     	     | base-devel
-automake      	     | automake
-autoconf      	     | autoconf
-libtool	      	     | libtool
 cmake	      	     | cmake
 zlib1g-dev	     | lib32-zlib
 pkg-config    	     | pkgconf
