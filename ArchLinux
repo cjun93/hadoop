@@ -1,5 +1,6 @@
 # Hadoop installation on Arch Linux
-
+Don't forget JAVA_HOME path
+$ export JAVA_HOME="path/to/java"
 
 # Required packages
 1. oracle java (AUR)
