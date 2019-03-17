@@ -24,7 +24,7 @@ Optional
 ---------------------------------------
 snappy               | snappy
 libsnappy-dev        | libsnappy (AUR)*
-bzip2	             | bizp2
+bzip2	             | bzip2
 libbz2-dev           | lib32-bzip2
 libjansson-dev       | jansson
 fuse		     | fuse
