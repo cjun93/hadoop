@@ -17,9 +17,12 @@ maven                | maven
 cmake	      	     | cmake
 zlib1g-dev	     | lib32-zlib
 pkg-config    	     | pkgconf
-libssl-dev    	     | openssl
+libssl-dev    	     | openssl1
 		     | zlib
 		     | libsasl
+		     | doxygen
+		     | python
+		     | python2
 ---------------------------------------
 Optional
 ---------------------------------------
