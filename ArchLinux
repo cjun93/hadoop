@@ -19,6 +19,7 @@ zlib1g-dev	     | lib32-zlib
 pkg-config    	     | pkgconf
 libssl-dev    	     | openssl
 		     | zlib
+		     | libsasl
 ---------------------------------------
 Optional
 ---------------------------------------
