@@ -58,7 +58,11 @@ $ protoc --version
 ===============================================================
 Troubleshooting
 ===============================================================
-1. Error rpc in hadoop-pipes modeules
+1. bswap, ..codec.cc.o 관련해서 error 가 발생시 
+https://issues.apache.org/jira/browse/HADOOP-11505
+참고하여 compiling 전에 수정해야 함.
+
+2. Error rpc in hadoop-pipes modules
 diff --git a/hadoop-tools/hadoop-pipes/src/CMakeLists.txt b/hadoop-tools/hadoop-pipes/src/CMakeLists.txt
 index ff660bfafce..72f422b18bd 100644
 --- a/hadoop-tools/hadoop-pipes/src/CMakeLists.txt
