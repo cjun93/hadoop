@@ -1,0 +1,5 @@
+How to increase Java maximum heap size for zookeeper
+
+
+
+export _JAVA_OPTIONS=-Xmx1024m to ~/.bashrc
